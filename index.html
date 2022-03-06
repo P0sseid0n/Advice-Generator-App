@@ -9,27 +9,33 @@
 
 		<title>Frontend Mentor | Advice generator app</title>
 
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="css/index.css" />
 	</head>
 	<body>
-		<div>
-			<p>Advice #<!-- Advice ID goes here --></p>
+		<section>
+			<p>
+				Advice #<span><!-- Advice ID goes here --></span>
+			</p>
 
 			<h2>"<!-- Advice text goes here -->"</h2>
-		</div>
+
+			<img id="desktop-divider" src="images/pattern-divider-desktop.svg" alt="Divider" />
+			<img id="mobile-divider" src="images/pattern-divider-mobile.svg" alt="Divider" />
+
+			<button>
+				<img src="images/icon-dice.svg" alt="Dice" />
+			</button>
+		</section>
 
 		<div class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-			<a href="#">Your Name Here</a>.
+			<a href="http://p0sseid0n.site" target="_blank" rel="noopener noreferrer">P0sseid0n</a>
 		</div>
+
+		<script src="js/index.js"></script>
 	</body>
 </html>
