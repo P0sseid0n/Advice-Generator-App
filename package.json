@@ -1,0 +1,22 @@
+{
+  "name": "advice-generator-app",
+  "version": "1.0.0",
+  "description": "Projeto do [Frontend Mentor](https://www.frontendmentor.io)",
+  "main": "script/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P0sseid0n/Advice-Generator-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/P0sseid0n/Advice-Generator-App/issues"
+  },
+  "homepage": "https://github.com/P0sseid0n/Advice-Generator-App#readme",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}
