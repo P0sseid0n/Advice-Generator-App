@@ -1,9 +1,16 @@
 let fetching = false
 const buttonFetch = document.querySelector('section button') as HTMLButtonElement
 
+interface ISlip {
+	id: Number
+	advice: string
+}
+
 async function getAdvice() {
-	const idText = document.querySelector('section p span') as HTMLSpanElement
-	const adviceText = document.querySelector('section h2') as HTMLHeadingElement
+	const idText = document.querySelector('section p #AdviceID') as HTMLSpanElement
+	const adviceText = document.querySelector('section #AdviceText') as HTMLHeadingElement
+
+	fetching = fetching || buttonFetch.disabled
 
 	if (fetching) return
 	fetching = true
@@ -11,8 +18,10 @@ async function getAdvice() {
 
 	fetch('https://api.adviceslip.com/advice')
 		.then(response => response.json())
-		.then(({ slip }) => {
-			idText.innerHTML = slip.id
+		.then(response => {
+			const slip: ISlip = response.slip
+
+			idText.innerHTML = String(slip.id)
 			adviceText.innerHTML = '"' + slip.advice + '"'
 		})
 		.catch(error => {
